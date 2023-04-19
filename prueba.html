@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+</head>
+<body>
+<textarea id="textArea" cols="50"></textarea>
+<button onclick="copyToClipBoard()">Copy</button>
+
+<script src="link to your JS file"></script>
+</body>
+<script>
+function copyToClipBoard() {
+
+var content = document.getElementById('textArea');
+
+content.select();
+document.execCommand('copy');
+
+
+}
+</script>
+</html>
